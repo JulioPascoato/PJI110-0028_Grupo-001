@@ -1,28 +1,30 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import { Container, Header, Section, MenuTop } from "./styles";
+
+
+import { Container, Navbar, Nav} from "react-bootstrap";
 
 
 export const MenuHeader = () => {
 
 
     return (
-        <Container>
-            <Header>
-                IPGG
-            </Header>
-                <Section>
-                    <MenuTop>
-                        Contato
-                    </MenuTop>
-                    <MenuTop>
-                        Consultas
-                    </MenuTop>
-                    <MenuTop>
-                        Downloads
-                    </MenuTop>
-                </Section>
-            
-        </Container>
+
+      
+            <Container fluid="md">
+                <Navbar variant="light" expand>
+            <Container fluid>
+             <Navbar.Brand href="#home">CICAP</Navbar.Brand>
+              <Nav className="me-auto">
+                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#features">Features</Nav.Link>
+                <Nav.Link href="#pricing">Pricing</Nav.Link>
+            </Nav>
+            </Container>
+         </Navbar>
+         </Container>
+        
+        
+        
+        
     )
 }

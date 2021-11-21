@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -37,6 +38,7 @@
     transform: rotate(360deg);
   }
 }
+
 
 .container{
   display: flex;
@@ -413,6 +415,7 @@ to{
 .container {
   height: 100vh;
 }
+
 .content {
   width: 100%;
   height: 100%;
@@ -437,6 +440,11 @@ to{
   top:60%;
   left: 0;
   border-radius: 0;
+}
+
+.containerMenu{
+  background-color: #000;
+  font-size: 1000px;
 }
 
 /* ANIMAÇÃO MOBILE CSS*/
@@ -538,5 +546,7 @@ to{
     width: 100%;
 
   }
+
+
 
 }
