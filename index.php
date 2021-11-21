@@ -1,5 +1,5 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT'] . '/PJI110-0028_Grupo-001/include/header.inc';
+include $_SERVER['DOCUMENT_ROOT'] . './include/header.html';
 ?>
 
 <!-- Inserir código do Body -->
@@ -57,5 +57,5 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PJI110-0028_Grupo-001/include/header.inc';
 
 
 <?php
-	include $_SERVER['DOCUMENT_ROOT'] . '/PJI110-0028_Grupo-001/include/footer.inc';
+	include $_SERVER['DOCUMENT_ROOT'] . './include/footer.html';
 ?>
