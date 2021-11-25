@@ -21,9 +21,11 @@ export const DivFooters = styled.div`
 
 export const ButtonFooters = styled.button`
 
-    width: 250px;
+    width: 450px;
     height: 150px;
     border-radius: 10px;
     background-color: transparent;
     box-shadow: 60px #000;
+    margin: 30px;
+    text-decoration: none;
 `
