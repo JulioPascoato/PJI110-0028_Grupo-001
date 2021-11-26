@@ -6,9 +6,7 @@ export const SectionMenu =styled.section`
     background-color: #D4ECDD;
     padding: 70px 15px 70px 70px;
     text-align: left;
-    
-   
-`
+ `
 export const ContainerSite =styled.div`
 
     margin: 0;

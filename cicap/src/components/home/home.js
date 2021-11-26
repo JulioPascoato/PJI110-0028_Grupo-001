@@ -20,7 +20,9 @@ export const Home = () => {
                         <Col sm={8}>
                             <h3 class="small-heading">Sistema Cadastro de Consultas</h3>
                             <h1 class="big-heading">Instituto Paulista de Geriatria e Gerontologia (IPGG) José Ermírio de Moraes</h1>
-                            <Button size="md" variant="dark"> <FontAwesomeIcon icon={faBook} />Agendamento </Button>
+                            <Button size="md" variant="outline-dark"> 
+                                <FontAwesomeIcon icon={faBook} />Agendamento 
+                            </Button>
                         </Col>
                         <Col sm={4}>
                             <img src={Img} alt="logo" />

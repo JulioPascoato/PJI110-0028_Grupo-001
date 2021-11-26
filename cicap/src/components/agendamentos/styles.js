@@ -24,10 +24,9 @@ export const ConteudoTitulo = styled.section`
 
 export const Titulo = styled.h2`
 
-    color: #00cc44; 
+    color: #345B63;
     font-size: 30px;
-    text-align: center;
-    padding: 0 0 0 100px;
+    padding: 15px;
 
 `;
 
@@ -39,14 +38,14 @@ export const BotaoAcao = styled.section`
 
 export const ButtonSuccess = styled.button`
     background-color: #fff;
-    color: #00cc44; 
-    padding: 8px 12px ;
-    border: 1px solid #00cc44; 
+    color: #345B63; 
+    padding: 8px 20px ;
+    border: 1px solid #345B63; 
     border-radius: 4px;
     cursor:pointer;
     font-size: 18px;
     :hover{
-        background-color: #00cc44; 
+        background-color: #345B63; 
         color: #fff;
     }
 `;

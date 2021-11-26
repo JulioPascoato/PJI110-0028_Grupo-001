@@ -3,13 +3,17 @@ import styled from 'styled-components';
 export const SectionFooter = styled.section`
     text-align: center;
     padding: 3% 15% 4%;
-    font-size: 1rem;
+        
 `
 
 export const Span = styled.div`
     text-align: center;
-    padding: 3% 15% 4%;
+    padding: 3% 15% 8%;
     font-size: 1rem;
+    color: #345B63;
+    &: hover{
+        color: #152D35
+    }
 `
 
 
@@ -20,12 +24,11 @@ export const DivFooters = styled.div`
 `
 
 export const ButtonFooters = styled.button`
-
-    width: 450px;
-    height: 150px;
+    padding: 35px;
     border-radius: 10px;
     background-color: transparent;
     box-shadow: 60px #000;
-    margin: 30px;
-    text-decoration: none;
+   
+    
+  
 `

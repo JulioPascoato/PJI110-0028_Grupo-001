@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-import { SectionFooter, Span, ButtonFooters } from './styles'
+import { SectionFooter, Span, ButtonFooters, H3} from './styles'
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBook } from '@fortawesome/free-solid-svg-icons'
@@ -15,27 +15,27 @@ export const MenuFooter = () => {
         <SectionFooter>
             <Container fluid="lg">
                 <Row>
-
-                    <ButtonFooters>
+                    <Col sm={6}>
                         <Link to="">
-                            <Col sm={8}>
-                                <Span><FontAwesomeIcon icon={faBook} size="3x" /></Span>
-                                <h3 >Agendamentos Coletivos</h3>                                
-                            </Col>
-                        </Link>
-                    </ButtonFooters>
-
-                    <ButtonFooters>
-                        <Link to="/formIndividual">
-                            <Col sm={8}>
-                                <Span><FontAwesomeIcon icon={faUserFriends} size="3x" /></Span>
-                                <i class="icon fas fa-user-friends fa-3x"></i>
-                                <h3>Agendamento Individual</h3>
+                            <ButtonFooters>
                                 
-                            </Col>
+                                    <Span><FontAwesomeIcon icon={faBook} size="3x" /></Span>   
+                                    <h4>Agendamentos com Excel</h4>                          
+  
+                            </ButtonFooters>
                         </Link>
-                    </ButtonFooters>
+                    </Col>
 
+                        <Col sm={6}>
+                            <Link to="/formIndividual">
+                                <ButtonFooters>
+                                
+                                        <Span><FontAwesomeIcon icon={faUserFriends} size="3x" /></Span>
+                                        <h4>Agendamento Individual</h4>   
+                                        
+                                </ButtonFooters>
+                            </Link>
+                        </Col>
                     
                 </Row>
             </Container>
