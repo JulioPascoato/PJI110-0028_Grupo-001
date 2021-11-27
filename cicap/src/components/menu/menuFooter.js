@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-import { SectionFooter, Span, ButtonFooters, H3} from './styles'
+import { SectionFooter, Span, ButtonFooters} from './styles'
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBook } from '@fortawesome/free-solid-svg-icons'

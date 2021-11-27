@@ -2,7 +2,7 @@ import React from "react";
 import { MenuHeader } from "../menu/menuHeader";
 import { MenuFooter } from "../menu/menuFooter";
 import Img from '../images/design-software.png'
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col} from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { SectionMenu, ContainerSite, ButtonSuccess  } from './styles'
 

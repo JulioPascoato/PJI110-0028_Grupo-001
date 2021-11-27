@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 
 import { Container, Navbar, Nav} from "react-bootstrap";
@@ -11,6 +12,7 @@ export const MenuHeader = () => {
 
       
             <Container fluid="md">
+
                 <Navbar variant="light" expand>
             <Container fluid>
              <Navbar.Brand href="/home">CICAP</Navbar.Brand>
@@ -21,6 +23,11 @@ export const MenuHeader = () => {
             </Nav>
             </Container>
          </Navbar>
+
+        <Helmet>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.3/xlsx.full.min.js" type="text/javascript" />
+        </Helmet>
+
          </Container>
         
         

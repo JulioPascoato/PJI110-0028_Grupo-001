@@ -30,6 +30,14 @@ export const Titulo = styled.h2`
 
 `;
 
+export const TituloH3 = styled.h3`
+
+    color: #345B63;
+    font-size: 30px;
+    padding: 25px 0px;
+
+`;
+
 export const BotaoAcao = styled.section`
     margin: 25px 0px;
     padding: 0px 100px 0px 0px; 
@@ -80,6 +88,17 @@ export const Select = styled.select`
 `;
 
 
+export const ContainerSite =styled.div`
 
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    color: #112031;
+`;
 
-
+export const SectionCadastro =styled.section`
+    background-color: #D4ECDD;
+    padding: 70px 15px 200px 70px;
+    text-align: left;
+ `
