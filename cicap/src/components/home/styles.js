@@ -17,3 +17,16 @@ export const ContainerSite =styled.div`
 
    
 `
+export const ButtonSuccess = styled.button`
+    background-color: #345B63;  
+    color: #FFFFFF;   
+    padding: 10px 20px ;
+    border: 1px solid #345B63; 
+    border-radius: 4px;
+    cursor:pointer;
+    font-size: 18px;
+    :hover{
+        background-color: #152D35;
+        color: #FFF; 
+    }
+`;

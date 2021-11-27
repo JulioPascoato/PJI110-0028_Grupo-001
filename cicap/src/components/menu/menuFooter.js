@@ -16,7 +16,7 @@ export const MenuFooter = () => {
             <Container fluid="lg">
                 <Row>
                     <Col sm={6}>
-                        <Link to="">
+                        <Link to="/formColetivo">
                             <ButtonFooters>
                                 
                                     <Span><FontAwesomeIcon icon={faBook} size="3x" /></Span>   

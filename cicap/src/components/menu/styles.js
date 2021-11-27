@@ -12,7 +12,7 @@ export const Span = styled.div`
     font-size: 1rem;
     color: #345B63;
     &: hover{
-        color: #152D35
+        color: #152D35;
     }
 `
 
@@ -24,11 +24,11 @@ export const DivFooters = styled.div`
 `
 
 export const ButtonFooters = styled.button`
-    padding: 35px;
+    marging: 50px;
+    padding: 50px;
     border-radius: 10px;
     background-color: transparent;
     box-shadow: 60px #000;
-   
     
-  
 `
+

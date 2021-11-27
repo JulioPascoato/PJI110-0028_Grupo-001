@@ -7,6 +7,10 @@ h1, h2, h3 , h4{
   color: #345B63;
 }
 
+.buttonHome {
+  width: max-content;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
