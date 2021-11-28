@@ -19,8 +19,8 @@ export const Home = () => {
                         <Col sm={8}>
                             <h3 class="small-heading">Sistema Cadastro de Consultas</h3>
                             <h1 class="big-heading">Instituto Paulista de Geriatria e Gerontologia (IPGG) José Ermírio de Moraes</h1>
-                            <Link to="/home">
-                                <ButtonSuccess>Lembrete WhatsApp </ButtonSuccess>
+                            <Link to="/relatorioCompleto">
+                                <ButtonSuccess>Relatórios de Consultas </ButtonSuccess>
                             </Link>
                                   
                         </Col>

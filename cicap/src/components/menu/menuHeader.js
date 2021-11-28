@@ -19,7 +19,7 @@ export const MenuHeader = () => {
               <Nav className="me-auto">
                 <Nav.Link href="/home">Home</Nav.Link>
                 <Nav.Link href="/formColetivo">Agendamentos</Nav.Link>
-                <Nav.Link href="#">Relatórios</Nav.Link>
+                <Nav.Link href="/relatorioCompleto">Relatórios</Nav.Link>
             </Nav>
             </Container>
          </Navbar>

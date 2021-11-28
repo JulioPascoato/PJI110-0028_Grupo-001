@@ -8,7 +8,7 @@ import { MenuFooter } from './components/menu/menuFooter'
 import { Home } from './components/home/home'
 import {FormIndividual} from './components/agendamentos/formIndividual'
 import {FormColetivo} from './components/agendamentos/formColetivo'
-
+import {RelatorioCompleto} from './components/relatorios/relatorioCompleto'
 
 function App() {
 
@@ -24,6 +24,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/formIndividual" element={<FormIndividual />} />
         < Route path="/formColetivo" element={< FormColetivo />} />
+        < Route path="/relatorioCompleto" element={< RelatorioCompleto />} />
       </Routes>
     </Router>
 
