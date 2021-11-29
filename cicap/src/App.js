@@ -9,6 +9,7 @@ import { Home } from './components/home/home'
 import {FormIndividual} from './components/agendamentos/formIndividual'
 import {FormColetivo} from './components/agendamentos/formColetivo'
 import {RelatorioCompleto} from './components/relatorios/relatorioCompleto'
+import {RelatorioWhats} from './components/relatorios/relatorioWhats'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/formIndividual" element={<FormIndividual />} />
         < Route path="/formColetivo" element={< FormColetivo />} />
         < Route path="/relatorioCompleto" element={< RelatorioCompleto />} />
+        < Route path="/relatorioWhats" element={< RelatorioWhats />} />
       </Routes>
     </Router>
 

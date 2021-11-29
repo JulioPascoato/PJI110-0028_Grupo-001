@@ -2,6 +2,7 @@ import React from "react";
 import { MenuHeader } from "../menu/menuHeader";
 import { Container, Row, Col, Button} from "react-bootstrap";
 import { ContainerSite, SectionCadastro, TituloH3 } from "./styles";
+import { Link } from "react-router-dom";
 
 export const RelatorioCompleto = () => {
     return(
@@ -22,7 +23,8 @@ export const RelatorioCompleto = () => {
             </Row>
             <Row>
                  <Col xs={12} md="12">
-                 <Button variant="dark" type='submit'> Consultar</Button>
+                 <Link to="/relatorioWhats"><Button variant="dark" type='submit'> Consultar</Button></Link>
+                
             </Col>
              </Row>
         
