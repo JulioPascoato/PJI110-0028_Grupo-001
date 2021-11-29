@@ -35,16 +35,15 @@ class ExcelReader extends Component {
       const ws = wb.Sheets[wsname];
 
       /* Convert array of arrays */
-      const data = XLSX.utils.sheet_to_json(ws);
-
-      
+      const data = XLSX.utils.sheet_to_json(ws);      
 
       /* Update state */
       this.setState({ data: data, cols: make_cols(ws['!ref']) }, () => {
         console.log(JSON.stringify(this.state.data, null, 2));
       });
- 
-    };
+
+      
+     };
  
     if (rABS) {
       reader.readAsBinaryString(this.state.file);
@@ -52,6 +51,30 @@ class ExcelReader extends Component {
       reader.readAsArrayBuffer(this.state.file);
     };
   }
+  agendamento(cadAgendamento) {
+     cadAgendamento = async e => {
+      e.preventDefault();
+      
+      await fetch("http://localhost/dashboard/cicap_php/agendamentos/cadastrar_agendamentos.php", {
+        method: "POST",
+        headers: {
+          'Content-Type':'application/json'
+        },
+        body: JSON.stringify(this.state.data, null, 2)
+      })
+      .then((response) =>response.json())
+       .then((responseJson) => {
+         if (responseJson.erro) {
+           console.log("erro")
+         } else {
+            alert("sucesso");
+         }
+       }).catch(() => {
+  
+       })
+    }
+  }
+  
  
   render() {
     return (
@@ -65,7 +88,7 @@ class ExcelReader extends Component {
         </Row>
         <Row>
           <Col xs={12} md="12">
-            <Button variant="dark" type='submit' value="Process Triggers" onClick={this.handleFile}> Cadastrar</Button>
+            <Button variant="dark" type='submit' value="Process Triggers" onClick={this.handleFile} onSubmit={this.agendamento}> Cadastrar</Button>
             </Col>
         </Row>
         </Container>
