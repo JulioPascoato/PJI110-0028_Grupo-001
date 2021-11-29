@@ -51,36 +51,12 @@ class ExcelReader extends Component {
       reader.readAsArrayBuffer(this.state.file);
     };
   }
-  agendamento(cadAgendamento) {
-     cadAgendamento = async e => {
-      e.preventDefault();
-      
-      await fetch("http://localhost/dashboard/cicap_php/agendamentos/cadastrar_agendamentos.php", {
-        method: "POST",
-        headers: {
-          'Content-Type':'application/json'
-        },
-        body: JSON.stringify(this.state.data, null, 2)
-      })
-      .then((response) =>response.json())
-       .then((responseJson) => {
-         if (responseJson.erro) {
-           console.log("erro")
-         } else {
-            alert("sucesso");
-         }
-       }).catch(() => {
-  
-       })
-    }
-  }
+ 
   
  
   render() {
     return (
-
-
-      
+     <div>
     <Container fluid="lg">
         <Row>
           <Col xs={12} md={6}><input type="file" className="form-control" id="file" accept=".xls,.xlsx" onChange={this.handleChange} />
@@ -93,6 +69,17 @@ class ExcelReader extends Component {
         </Row>
         </Container>
 
+        <ul>
+          {
+            this.state.data.map(function(consulta){
+              return <table>
+                  
+                <li>{consulta.Hora} - {consulta.Paciente} - {consulta.Tipo_Agendamento} - {consulta.Executante}</li> </table>
+            })
+          }
+        </ul>
+
+     </div>   
    
       
     )
